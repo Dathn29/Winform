@@ -1,0 +1,13 @@
+E:\Study\.Net\Cocaro\Cocaro\bin\Debug\Cocaro.exe.config
+E:\Study\.Net\Cocaro\Cocaro\bin\Debug\Cocaro.exe
+E:\Study\.Net\Cocaro\Cocaro\bin\Debug\Cocaro.pdb
+E:\Study\.Net\Cocaro\Cocaro\obj\Debug\Cocaro.csprojAssemblyReference.cache
+E:\Study\.Net\Cocaro\Cocaro\obj\Debug\Cocaro.Form1.resources
+E:\Study\.Net\Cocaro\Cocaro\obj\Debug\Cocaro.Properties.Resources.resources
+E:\Study\.Net\Cocaro\Cocaro\obj\Debug\Cocaro.csproj.GenerateResource.cache
+E:\Study\.Net\Cocaro\Cocaro\obj\Debug\Cocaro.csproj.CoreCompileInputs.cache
+E:\Study\.Net\Cocaro\Cocaro\obj\Debug\Cocaro.exe
+E:\Study\.Net\Cocaro\Cocaro\obj\Debug\Cocaro.pdb
+E:\Study\.Net\Cocaro\Cocaro\bin\Debug\aa\Cocaro.resources.dll
+E:\Study\.Net\Cocaro\Cocaro\obj\Debug\Cocaro.Form1.aa.resources
+E:\Study\.Net\Cocaro\Cocaro\obj\Debug\aa\Cocaro.resources.dll
