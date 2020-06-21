@@ -33,6 +33,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Totuvantaicho = new System.Windows.Forms.Button();
             this.Hoiykienkhangia = new System.Windows.Forms.Button();
+            this.Trogiup5050 = new System.Windows.Forms.Button();
             this.l1 = new System.Windows.Forms.Label();
             this.l2 = new System.Windows.Forms.Label();
             this.l3 = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.l13 = new System.Windows.Forms.Label();
             this.l14 = new System.Windows.Forms.Label();
             this.l15 = new System.Windows.Forms.Label();
-            this.Trogiup5050 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.cauhoi = new System.Windows.Forms.Button();
@@ -112,6 +112,17 @@
             this.Hoiykienkhangia.Text = "Khán giả";
             this.Hoiykienkhangia.UseVisualStyleBackColor = true;
             this.Hoiykienkhangia.Click += new System.EventHandler(this.Hoiykienkhangia_Click);
+            // 
+            // Trogiup5050
+            // 
+            this.Trogiup5050.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Trogiup5050.Location = new System.Drawing.Point(7, 16);
+            this.Trogiup5050.Name = "Trogiup5050";
+            this.Trogiup5050.Size = new System.Drawing.Size(44, 42);
+            this.Trogiup5050.TabIndex = 30;
+            this.Trogiup5050.Text = "50:50";
+            this.Trogiup5050.UseVisualStyleBackColor = true;
+            this.Trogiup5050.Click += new System.EventHandler(this.Trogiup5050_Click);
             // 
             // l1
             // 
@@ -292,17 +303,6 @@
             this.l15.Size = new System.Drawing.Size(163, 31);
             this.l15.TabIndex = 15;
             this.l15.Text = "15   150.000";
-            // 
-            // Trogiup5050
-            // 
-            this.Trogiup5050.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Trogiup5050.Location = new System.Drawing.Point(7, 16);
-            this.Trogiup5050.Name = "Trogiup5050";
-            this.Trogiup5050.Size = new System.Drawing.Size(44, 42);
-            this.Trogiup5050.TabIndex = 30;
-            this.Trogiup5050.Text = "50:50";
-            this.Trogiup5050.UseVisualStyleBackColor = true;
-            this.Trogiup5050.Click += new System.EventHandler(this.Trogiup5050_Click);
             // 
             // panel1
             // 

@@ -28,7 +28,7 @@ namespace AiLaTrieuPhu
             Random r = new Random();
             for(int i = 0; i < 5; i++)
             {
-                string s = r.Next(1, 17).ToString();
+                string s = r.Next(1, 11).ToString();
                 int temp = 0;
                 for (int j = 0; j < 15; j++)
                 {
@@ -47,7 +47,7 @@ namespace AiLaTrieuPhu
             }
             for(int i = 5; i < 10; i++)
             {
-                string s = r.Next(18, 30).ToString();
+                string s = r.Next(11, 30).ToString();
                 int temp = 0;
                 for (int j = 0; j < 15; j++)
                 {
@@ -65,7 +65,7 @@ namespace AiLaTrieuPhu
             }
             for (int i = 10; i < 15; i++)
             {
-                string s = r.Next(30, 41).ToString();
+                string s = r.Next(30, 39).ToString();
                 int temp = 0;
                 for (int j = 0; j < 15; j++)
                 {
@@ -97,6 +97,7 @@ namespace AiLaTrieuPhu
             macauhoi =array[count].ToString();
             Help5050 = "";
             LayCauHoi();
+            DocCauHoi();
         }
         void Khoitao()
         {
@@ -104,6 +105,199 @@ namespace AiLaTrieuPhu
             bB.Enabled = true;
             bC.Enabled = true;
             bD.Enabled = true;
+        }
+        void DocCauHoi()
+        {
+            if (macauhoi == "1")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._1;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "2")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._2;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "3")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._3;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "4")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._4;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "5")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._5;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "6")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._6;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "7")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._7;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "8")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._8;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "9")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._9;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "10")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._10;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "11")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._11;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "12")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._12;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "13")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._13;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "14")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._14;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "15")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._15;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "16")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._16;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "17")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._17;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "18")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._18;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "19")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._19;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "20")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._20;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "21")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._21;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "22")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._22;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "23")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._23;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "24")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._24;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "25")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._25;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "26")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._26;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "27")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._27;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "28")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._28;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "29")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._29;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "30")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._30;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "31")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._31;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "32")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._32;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "33")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._33;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "34")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._34;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "35")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._35;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "36")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._36;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "37")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._37;
+                mediaSoundPlayer.Play();
+            }
+            else if (macauhoi == "38")
+            {
+                mediaSoundPlayer.Stream = Properties.Resources._38;
+                mediaSoundPlayer.Play();
+            }
         }
         void LayCauHoi()
         {
@@ -117,7 +311,6 @@ namespace AiLaTrieuPhu
             bC.Text = tablecauhoi.Rows[0][4].ToString();
             bD.Text = tablecauhoi.Rows[0][5].ToString();
         }
-        
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -134,6 +327,7 @@ namespace AiLaTrieuPhu
        
         private void bA_Click(object sender, EventArgs e)
         {
+            mediaSoundPlayer.Stop();
             bA.BackColor = Color.Red;
             if (MessageBox.Show("Đáp án A là đáp án cuối cùng của bạn", "Hỏi", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
@@ -170,6 +364,7 @@ namespace AiLaTrieuPhu
 
         private void bB_Click(object sender, EventArgs e)
         {
+            mediaSoundPlayer.Stop();
             bB.BackColor = Color.Red;
             if (MessageBox.Show("Đáp án B là đáp án cuối cùng của bạn", "Hỏi", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
@@ -206,6 +401,7 @@ namespace AiLaTrieuPhu
 
         private void bC_Click(object sender, EventArgs e)
         {
+            mediaSoundPlayer.Stop();
             bC.BackColor = Color.Red;
             if (MessageBox.Show("Đáp án C là đáp án cuối cùng của bạn", "Hỏi", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
@@ -246,6 +442,7 @@ namespace AiLaTrieuPhu
 
         private void bD_Click_1(object sender, EventArgs e)
         {
+            mediaSoundPlayer.Stop();
             bD.BackColor = Color.Red;
             if (MessageBox.Show("Đáp án D là đáp án cuối cùng của bạn", "Hỏi", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
