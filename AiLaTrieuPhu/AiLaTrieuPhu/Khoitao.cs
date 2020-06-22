@@ -29,7 +29,12 @@ namespace AiLaTrieuPhu
             mediaSoundPlayer.Stop();
             Form1 f = new Form1();
             f.ShowDialog();
-            //this.Close();
+            this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

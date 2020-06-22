@@ -14,12 +14,13 @@ namespace AiLaTrieuPhu
 {
     public partial class Form1 : Form
     {
-        int count = 0;
+        public static int count = 0;
         string[] array = { "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" };
         public Form1()
         {
             
             InitializeComponent();
+            count = 0;
             Play();
         }
         private System.Media.SoundPlayer mediaSoundPlayer = new System.Media.SoundPlayer();
@@ -97,6 +98,7 @@ namespace AiLaTrieuPhu
             macauhoi =array[count].ToString();
             Help5050 = "";
             LayCauHoi();
+            DocCau();
             DocCauHoi();
         }
         void Khoitao()
@@ -105,6 +107,99 @@ namespace AiLaTrieuPhu
             bB.Enabled = true;
             bC.Enabled = true;
             bD.Enabled = true;
+        }
+        void DocCau()
+        {
+            if (count == 0)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c1;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 1)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c2;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 2)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c3;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 3)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c4;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 4)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c5;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 5)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c6;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 6)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c7;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 7)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c8;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 8)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c9;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 9)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c10;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 10)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c11;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 11)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c12;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 12)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c13;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 13)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c14;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(2000);
+            }
+            else if (count == 14)
+            {
+                mediaSoundPlayer.Stream = Properties.Resources.c15;
+                mediaSoundPlayer.Play();
+                Thread.Sleep(5000);
+            }
         }
         void DocCauHoi()
         {
@@ -337,6 +432,13 @@ namespace AiLaTrieuPhu
                     mediaSoundPlayer.Play();
                     MessageBox.Show("Đó là câu trả lời đúng");
                     mediaSoundPlayer.Stop();
+                    if (count == 4)
+
+                    {
+                        mediaSoundPlayer.Stream = Properties.Resources.C5_Dung;
+                        mediaSoundPlayer.Play();
+                        Thread.Sleep(7000);
+                    }
                     bA.BackColor = Color.RoyalBlue;
                     count++;
                     if (count != 15)
@@ -344,15 +446,23 @@ namespace AiLaTrieuPhu
                     if (count == 15)
                     {
                         MessageBox.Show("Bạn đã trở thành triệu phú! Xin chúc mừng");
-                        this.Close();
+                        timer1.Stop();
+                        ThuaCuoc f = new ThuaCuoc(count + 1);
+                        f.ShowDialog();
+                        this.Hide();
                         count = 0;
                     }
                     
                 }
                 else
                 {
-                    MessageBox.Show("Thua cuộc", "Thông báo");
-                    this.Close();
+                    DataTable table = new DataTable();
+                    table = LayDapAn();
+                    MessageBox.Show(table.Rows[0][1].ToString() + " mới là đáp án đúng");
+                    timer1.Stop();
+                    ThuaCuoc f = new ThuaCuoc(count + 1);
+                    f.ShowDialog();
+                    this.Hide();
                 }
 
             }
@@ -374,6 +484,13 @@ namespace AiLaTrieuPhu
                     mediaSoundPlayer.Play();
                     MessageBox.Show("Đó là câu trả lời đúng");
                     mediaSoundPlayer.Stop();
+                    if (count == 4)
+                    {
+                        mediaSoundPlayer.Stream = Properties.Resources.C5_Dung;
+                        mediaSoundPlayer.Play();
+                        Thread.Sleep(7000);
+
+                    }
                     bB.BackColor = Color.RoyalBlue;
                     count++;
                     if (count != 15)
@@ -381,15 +498,23 @@ namespace AiLaTrieuPhu
                     if (count == 15)
                     {
                         MessageBox.Show("Bạn đã trở thành triệu phú! Xin chúc mừng");
-                        this.Close();
+                        timer1.Stop();
+                        ThuaCuoc f = new ThuaCuoc(count + 1);
+                        f.ShowDialog();
+                        this.Hide();
                         count = 0;
                     }
                     
                 }
                 else
                 {
-                    MessageBox.Show("Thua cuộc", "Thông báo");
-                    this.Close();
+                    DataTable table = new DataTable();
+                    table = LayDapAn();
+                    MessageBox.Show(table.Rows[0][1].ToString() + " mới là đáp án đúng");
+                    timer1.Stop();
+                    ThuaCuoc f = new ThuaCuoc(count+1);
+                    f.ShowDialog();
+                    this.Hide();
                 }
 
             }
@@ -415,22 +540,37 @@ namespace AiLaTrieuPhu
                     mediaSoundPlayer.Stream = Properties.Resources.TraLoiDung;
                     mediaSoundPlayer.Play();
                     MessageBox.Show("Đó là câu trả lời đúng");
-                    mediaSoundPlayer.Stop(); bC.BackColor = Color.RoyalBlue;
+                    mediaSoundPlayer.Stop();
+                    if (count == 4)
+                    {
+                        mediaSoundPlayer.Stream = Properties.Resources.C5_Dung;
+                        mediaSoundPlayer.Play();
+                        Thread.Sleep(7000);
+                    }
+                    bC.BackColor = Color.RoyalBlue;
                     count++;
                     if (count != 15)
                         Play();
                     if (count == 15)
                     {
                         MessageBox.Show("Bạn đã trở thành triệu phú! Xin chúc mừng");
-                        this.Close();
+                        timer1.Stop();
+                        ThuaCuoc f = new ThuaCuoc(count + 1);
+                        f.ShowDialog();
+                        this.Hide();
                         count = 0;
                     }
                     
                 }
                 else
                 {
-                    MessageBox.Show("Thua cuộc", "Thông báo");
-                    this.Close();
+                    DataTable table = new DataTable();
+                    table = LayDapAn();
+                    MessageBox.Show(table.Rows[0][1].ToString() + " mới là đáp án đúng");
+                    timer1.Stop();
+                    ThuaCuoc f = new ThuaCuoc(count+1);
+                    f.ShowDialog();
+                    this.Hide();
                 }
 
             }
@@ -451,20 +591,36 @@ namespace AiLaTrieuPhu
                     mediaSoundPlayer.Stream = Properties.Resources.TraLoiDung;
                     mediaSoundPlayer.Play();
                     MessageBox.Show("Đó là câu trả lời đúng");
-                    mediaSoundPlayer.Stop(); bD.BackColor = Color.RoyalBlue;
+                    mediaSoundPlayer.Stop();
+                    if (count == 4)
+                    {
+                        mediaSoundPlayer.Stream = Properties.Resources.C5_Dung;
+                        mediaSoundPlayer.Play();
+                        Thread.Sleep(7000);
+                    }
+                    bD.BackColor = Color.RoyalBlue;
                     count++;
                     if (count == 15)
                     {
                         MessageBox.Show("Bạn đã trở thành triệu phú! Xin chúc mừng");
-                        this.Close();
+                        timer1.Stop();
+                        ThuaCuoc f = new ThuaCuoc(count + 1);
+                        f.ShowDialog();
+                        this.Hide();
+                        count = 0;
                     }
                     if (count != 15)
                         Play();
                 }
                 else
                 {
-                    MessageBox.Show("Thua cuộc", "Thông báo");
-                    this.Close();
+                    DataTable table = new DataTable();
+                    table = LayDapAn();
+                    MessageBox.Show(table.Rows[0][1].ToString() + " mới là đáp án đúng");
+                    timer1.Stop();
+                    ThuaCuoc f = new ThuaCuoc(count + 1) ;
+                    f.ShowDialog();
+                    this.Hide();
                 }
 
             }
@@ -485,8 +641,10 @@ namespace AiLaTrieuPhu
             label1.Text = counter.ToString();
             if (counter == 0)
             {
-                MessageBox.Show("Thua cuộc", "Thông báo");
-                this.Close();
+                MessageBox.Show("Hết thời gian");
+                ThuaCuoc f = new ThuaCuoc(count+1);
+                f.ShowDialog();
+                this.Hide();
                 timer1.Stop();
             }
         }
@@ -590,7 +748,7 @@ namespace AiLaTrieuPhu
                 tablecauhoi = LayDapAn();
                 mediaSoundPlayer.Stream = Properties.Resources.TroGiup5050;
                 mediaSoundPlayer.Play();
-                Thread.Sleep(9000);
+                Thread.Sleep(6500);
                 if (tablecauhoi.Rows[0][1].ToString() == "A")
                 {
                     int a = r.Next(1, 3);
@@ -768,7 +926,6 @@ namespace AiLaTrieuPhu
                     Help5050 += "D";
                 }
                 Trogiup5050.Enabled = false;
-                
             }
         }
         private void Hoiykienkhangia_Click(object sender, EventArgs e)
@@ -785,41 +942,14 @@ namespace AiLaTrieuPhu
         {
             if(MessageBox.Show("Ban chắc chắn muốn dùng trợ giúp này","Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                Random r = new Random();
                 DataTable tablecauhoi = new DataTable();
                 tablecauhoi = LayDapAn();
-                if (r.Next(1, 10) != 11)
-                {
-                    MessageBox.Show("Đáp án câu hỏi này là " + tablecauhoi.Rows[0][1]);
-                    Totuvantaicho.Enabled = false;
-                }
-                else
-                {
-                    if (tablecauhoi.Rows[0][1].ToString() == "A")
-                    {
-                        MessageBox.Show("Đáp án câu hỏi này là C");
-                        Totuvantaicho.Enabled = false;
-                    }
-                    if (tablecauhoi.Rows[0][1].ToString() == "B")
-                    {
-                        MessageBox.Show("Đáp án câu hỏi này là A");
-                        Totuvantaicho.Enabled = false;
-                    }
-                    if (tablecauhoi.Rows[0][1].ToString() == "C")
-                    {
-                        MessageBox.Show("Đáp án câu hỏi này là D");
-                        Totuvantaicho.Enabled = false;
-
-                    }
-                    if (tablecauhoi.Rows[0][1].ToString() == "D")
-                    {
-                        MessageBox.Show("Đáp án câu hỏi này là B");
-                        Totuvantaicho.Enabled = false;
-
-                    }
-                }
+                Totuvantaicho.Enabled = false;
+                string a = tablecauhoi.Rows[0][1].ToString();
+                ToTuVan f = new ToTuVan(a);
+                f.ShowDialog();
             }
-            
+
         }
     }
 }

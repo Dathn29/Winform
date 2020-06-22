@@ -9,6 +9,7 @@ namespace AiLaTrieuPhu
 {
     public class DapAn
     {
+        public int count { set; get; }
         public string macauhoi { set; get; }
         public string trangthai { set; get; }
         public DataTable LayDapAn()

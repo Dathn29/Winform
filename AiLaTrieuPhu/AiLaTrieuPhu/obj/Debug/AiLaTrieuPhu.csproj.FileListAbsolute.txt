@@ -10,3 +10,5 @@ E:\Study\.Net\AiLaTrieuPhu\AiLaTrieuPhu\obj\Debug\AiLaTrieuPhu.exe
 E:\Study\.Net\AiLaTrieuPhu\AiLaTrieuPhu\obj\Debug\AiLaTrieuPhu.pdb
 E:\Study\.Net\AiLaTrieuPhu\AiLaTrieuPhu\obj\Debug\AiLaTrieuPhu.HoiYKienKhanGia.resources
 E:\Study\.Net\AiLaTrieuPhu\AiLaTrieuPhu\obj\Debug\AiLaTrieuPhu.Khoitao.resources
+E:\Study\.Net\AiLaTrieuPhu\AiLaTrieuPhu\obj\Debug\AiLaTrieuPhu.ThuaCuoc.resources
+E:\Study\.Net\AiLaTrieuPhu\AiLaTrieuPhu\obj\Debug\AiLaTrieuPhu.ToTuVan.resources
